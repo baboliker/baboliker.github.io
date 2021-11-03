@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ua">
+	<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="./styles.css">
+        <script src="./script/custom.js"></script>
+		<title>baboliker</title>
+
+	</head>
+	<body class="bg-white font-sans">
+        <!--PRELOADER-->
+        <div id='preloader'>
+            <img src="./images/preloader.gif" alt="preloader">
+        </div>
+
+		<header class="bg-white relative z-20">
+      <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+          <div class="flex justify-between">
+            <div class="flex space-x-7">
+              <div>
+                <!-- Website Logo -->
+                <a href="./index.html" class="flex items-center py-4 px-2">
+                  <span class="font-semibold text-gray-500 text-lg">baboliker</span>
+                </a>
+              </div>
+              <!-- Primary Navbar items -->
+              <div class="hidden md:flex items-center space-x-1">
+                <a href="./index.html" class="py-4 px-2 text-green-500 border-b-4 border-green-500 font-semibold ">Додому</a>
+                <a href="./privacykuretik.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Політика конфіденційності</a>
+                <a href="./contactuserin.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Контакт з нами</a>
+              </div>
+            </div>
+            <!-- Secondary Navbar items -->
+            <div class="hidden md:flex items-center space-x-3 ">
+              <a href="./index.html" class="py-2 px-2 font-medium text-gray-500 rounded hover:bg-green-500 hover:text-white transition duration-300">Увійти</a>
+              <a href="./index.html" class="py-2 px-2 font-medium text-white bg-green-500 rounded hover:bg-green-400 transition duration-300">Зареєструватися</a>
+            </div>
+            <!-- Mobile menu button -->
+            <div class="md:hidden flex items-center">
+              <button class="outline-none mobile-menu-button">
+              <svg class=" w-6 h-6 text-gray-500 hover:text-green-500 "
+                x-show="!showMenu"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+            </div>
+          </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu">
+          <ul class="">
+            <li class="active"><a href="index.html" class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold">Додому</a></li>
+            <li><a href="#services" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Політика конфіденційності</a></li>
+            <li><a href="#about" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Контакт з нами</a></li>
+          </ul>
+        </div>
+        <script>
+          const btn = document.querySelector("button.mobile-menu-button");
+          const menu = document.querySelector(".mobile-menu");
+  
+          btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+          });
+        </script>
+      </nav>
+		</header>
+
+<div class="relative bg-white overflow-hidden">
+  <div class="max-w-7xl mx-auto">
+    <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+      <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+        <polygon points="50,0 100,0 50,100 0,100" />
+      </svg>
+
+      <div>
+        <div class="relative pt-6 px-4 sm:px-6 lg:px-8">
+        </div>
+
+        <!--
+          Mobile menu, show/hide based on menu open state.
+
+          Entering: "duration-150 ease-out"
+            From: "opacity-0 scale-95"
+            To: "opacity-100 scale-100"
+          Leaving: "duration-100 ease-in"
+            From: "opacity-100 scale-100"
+            To: "opacity-0 scale-95"
+        -->
+        <div class="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+        </div>
+      </div>
+
+      <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+        <div class="sm:text-center lg:text-left">
+          <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+            <span class="block xl:inline">Топ-3</span>
+            <span class="block text-green-500 xl:inline">найкращі гри з play market</span>
+          </h1>
+          <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+            Наша редакція обрала найкращі ігри за тематикою платформерів, карточних ігор, доміно, судоку.
+          </p>
+        </div>
+      </main>
+    </div>
+  </div>
+  <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+    <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="./images/top-top.jpg" alt="Background">
+  </div>
+</div>
+        <div class="bg-gray-100 py-24 px-12">
+			<div class="container mx-auto">
+
+				<div class="flex flex-wrap">
+
+					<div class="mb-12 lg:mb-0 w-full lg:flex-1">
+						<h1 class="mb-4 font-black leading-tight text-3xl md:text-3xl text-gray-900 text-center"></h1>
+            <h2 class="text-3xl md:text-3xl mb-8 text-center uppercase font-black">Політика конфіденційності</h2>
+            <p class="text-xl pb-5">Ця політика конфіденційності пояснює, як ви використовуєте та ділиться вашою особистою інформацією, коли ви відвідуєте або купуєте на сайті.</p>
+              <p class="text-xl pb-5">Особиста інформація, яку ми збираємо</p>
+              <p class="text-xl pb-5">Коли ви відвідуєте веб-сайт, ми автоматично збираємо інформацію про пристрій, включаючи інформацію про ваш веб-браузер, IP-адресу, часовий пояс і в деяких печивах, встановлених на вашому пристрої.Більше, якщо ви шукаєте навігацію веб-сайту.Ми збираємо інформацію про кожен веб-сайт або відвідування, наприклад. Як ви веб-сайт або пошукові терміни, перегляньте веб-сайт та інформацію, в якому взаємодіє з веб-сайтом. Ця інформація автоматично збирає "Інформаційний виклик тону".</p>
+              <p class="text-xl pb-5">Ми збираємо інформацію про пристрій з друкованими технологіями:</p>
+              <p class="text-xl pb-5">"Файли журналів" дотримуються виконання завдань, виконаних на сайті та збору даних, включаючи IP-адресу, тип браузера, постачальника послуг Інтернету, підключення / вихідний сторінки та знаки даних / годинник.</p>
+              <p class="text-xl pb-5">"Веб-маяки", "Label" та "Pixel" - це електронні файли, що використовуються для запису інформації про навігацію сайту.</p>
+              <p class="text-xl pb-5">Номер телефону Ця інформація називається "Інформація про командування".</p>
+              <p class="text-xl pb-5">Якщо ми говоримо про "особисту інформацію" у цій політиці конфіденційності, ми також говоримо про інформацію та інформацію про замовлення.</p>
+              <p class="text-xl pb-5">Як ми використовуємо вашу особисту інформацію?</p>
+              <p class="text-xl pb-5">Інформація про замовлення, яка, як правило, збирається, використовується для задоволення команд за позицією (включаючи обробку платіжної інформації, організації доставки та постачання рахунків-фактур та / або підтвердження підтвердження).</p>
+              <p class="text-xl pb-5">Ми використовуємо дані пристрою, який ми зібрали, щоб визначити потенційні ризики та шахрайство (особливо ваша IP-адреса), і зазвичай вдосконалюються та оптимізувати наш веб-сайт.</p>
+              <p class="text-xl pb-5">Поділіться особистою інформацією.</p>
+              <p class="text-xl pb-5">Ми поділяємо вашу особисту інформацію з третіми особами, щоб допомогти нам скористатися вашими особистими даними, як описано вище. Ми також використовуємо Google Analytics, щоб зрозуміти, як наші клієнти використовують веб-сайт: отримати більше інформації про те, як Google використовує вашу особисту інформацію: HTTPS: / / www.google.com / Intl / IT / Рекомендація / Конфіденційність / Малий Ви також можете скасувати журнал Google Analytics за адресою https://tools.google.com/dlpage/gaoptout.</p>
+              <p class="text-xl pb-5">Нарешті, ми можемо поділитися своєю особистою інформацією, щоб відповісти на відповідні закони та правила, реагувати на внески, реєстри або інші заявки на законну інформацію або іншим чином захищати наші права.</p>
+              <p class="text-xl pb-5">Рекламувати</p>
+              <p class="text-xl pb-5">Як описано вище, ми використовуємо вашу особисту інформацію для надання рекламних або прямих маркетингових комунікацій, які можуть бути зацікавлені в нашій думці. Для отримання додаткової інформації на сторінці прямих повідомлень див. На сторінці рекламної мережі за адресою http: // www. NetworkAdvertising.org /// www. NetworkAdvertising.org / St-OnlineS-Dvering / How-Dos-ET - веб-сайт праці.</p>
+              <p class="text-xl pb-5">Він може бути виключений з світлодіодного дисплея з посилань посилання:</p>
+              <p class="text-xl pb-5">Facebook: https://www.facebook.com/settings/?tab=ads</p>
+              <p class="text-xl pb-5">Google: https://www.google.com/settings/ads/anonymous</p>
+              <p class="text-xl pb-5">Bing: https://advertise.bingads.microsoft.com/en-us/resources/policies/personalized-ads</p>
+              <p class="text-xl pb-5">Ви також можете вимкнути ці послуги, відвідавши рекламне партнерство цифрового блокування порталу.: Http://optout.aboutads.info/.</p>
+              <p class="text-xl pb-5">Не слідувати</p>
+              <p class="text-xl pb-5">Пам'ятайте, що ми не змінюємо збір даних та використовуємо практику нашого веб-сайту, якщо ви не дотримуєтесь сигналу з вашого браузера.</p>
+              <p class="text-xl pb-5">Ваші права</p>
+              <p class="text-xl pb-5">Якщо ви є європейським мешканцем, у вас є право отримати доступ до ваших особистих даних, що зберігаються у вас та запитуєте випрямлення, оновлення або видалення персональних даних. Якщо ви хочете практикувати правильно, контакти не оновлюються в контактній інформації нижче.</p>
+              <p class="text-xl pb-5">Якщо ви є європейським мешканцем, ми будемо відповідати на ваші дані до ваших даних, щоб задовольнити свої контракти з вами (наприклад, через веб-сайт) або іншим чином, інакше підтверджують наші законні комерційні інтереси, перераховані вище. Дані SUS будуть передані до Європи, у тому числі Канада та Сполучені Штати.</p>
+              <p class="text-xl pb-5">Утримання</p>
+              <p class="text-xl pb-5">Якщо ви зробите замовлення через веб-сайт, ми зберігаємо інформацію про замовлення наших папок, якщо ви не попросите вас усунути цю інформацію.</p>
+              <p class="text-xl pb-5">змінювати</p>
+              <p class="text-xl pb-5">Наприклад, ми можемо оновити цю політику щодо конфіденційності від часу, щоб відобразити зміни в наших практиках або інших операційних, правових або регуляторних причинах.</p>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+    <footer class="border-t border-gray-200">
+      <div
+        class="
+          container
+          flex flex-col flex-wrap
+          px-4
+          py-16
+          mx-auto
+          md:items-center
+          lg:items-start
+          md:flex-row md:flex-nowrap
+          
+          
+        "
+      >
+        <div
+          class="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left"
+        >
+          <a
+            class="
+              flex
+              items-center
+              justify-center
+              text-4xl
+              font-bold
+              text-blue-700
+              md:justify-start
+            "
+          >
+            baboliker
+          </a>
+          <div class="flex mt-4">
+            <input
+              type="text"
+              class="
+                h-auto
+                p-2
+                text-sm
+                border border-grey-light
+                round
+                text-grey-dark
+              "
+              placeholder="Адреса почтвої скриньки"
+            />
+            <button class="h-auto p-3 text-xs text-white bg-red-600 rounded-sm">
+              Підписатися
+            </button>
+          </div>
+          <div class="flex justify-center mt-4 lg:mt-2">
+            <a href="https://facebook.com">
+              <svg
+                fill="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-6 h-6 text-blue-600"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                ></path>
+              </svg>
+            </a>
+            <a href="https://twitter.com" class="ml-3">
+              <svg
+                fill="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-6 h-6 text-blue-300"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                ></path>
+              </svg>
+            </a>
+            <a href="https://instagram.com" class="ml-3">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-6 h-6 text-pink-400"
+                viewBox="0 0 24 24"
+              >
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path
+                  d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+                ></path>
+              </svg>
+            </a>
+            <a href="https://linkedin.com" class="ml-3">
+              <svg
+                fill="currentColor"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="0"
+                class="w-6 h-6 text-blue-500"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="none"
+                  d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+                ></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="justify-between w-full mt-4 text-center lg:flex">
+          <div class="w-full px-4 lg:w-1/3 md:w-1/2">
+            <h2 class="mb-2 font-bold tracking-widest text-gray-900">
+              Швидка навігація
+            </h2>
+            <ul class="mb-8 space-y-2 text-sm list-none">
+              <li>
+                <a href="./index.html" class="text-gray-600 hover:text-gray-800">Додому</a>
+              </li>
+              <li>
+                <a href="./privacykuretik.html" class="text-gray-600 hover:text-gray-800">Політика конфіденційності</a>
+              </li>
+              <li>
+                <a href="./contactuserin.html" class="text-gray-600 hover:text-gray-800">Контакт з нами</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center -mt-12">
+        <p class="text-base text-gray-400">
+          Всі права захищені baboliker 2021
+        </p>
+      </div>
+    </footer>
+                        
+                
+                    </body>
+                </html>
+                
